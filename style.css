@@ -9,45 +9,9 @@ font-family: 'Poppins', sans-serif; */
 body{
  font-family: 'Poppins', sans-serif; 
 }
-/* a{
- text-decoration: none;
+a{
+        text-decoration: none;
 }
-.logo{
- width: 65%;
-}
-.logo p{
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-color: #3A3A3A;
-text-align: center;
-}
-menu{
- display: flex;
- justify-content: center;
-}
-.navbar{
- width: 100%;
-display: grid;
-grid-template-columns: repeat(2,1fr);
-
-}
-.nav{
- margin-top: 2px;
-}
-.nav nav ul{
- display: flex;
- list-style: none;
-}
-
-li a{
- color: #000;
- text-align: end;
-}
-li{
- margin-left: 34px;
-} */
-/* nav bar */
 .navigation {
  width: 100%;
  height: 94px;
@@ -78,12 +42,13 @@ width: 86%;
 }
 .menu ul li {
  list-style-type: none;
+ margin-left: 36px;
+
 }
 .menu ul li a {
  text-decoration: none;
  color: #3A3A3A;
   font-size: 16px;
- margin-right: 36px;
 }
 .menu ul li:last-child a {
  margin-right: 0;
@@ -98,15 +63,7 @@ width: 86%;
 /*---------------------
  Influencer Header
  ---------------------- */
- .categorie-container{
-  margin-top: 50px;
- }
- .influencer-categories{
-  display: flex;
-  justify-content: center;
-  margin: 30px 0px 50px 0px;
 
- }
 .container{
  display: flex;
  width: 100%;
@@ -131,15 +88,15 @@ width: 86%;
 font-size: 16px;
 color: #3A3A3A;
 line-height: 24px;
-
+margin-bottom: 30px;
 }
-.btn{
+.prebookBtn{
  background-color:  #E02C6D;
  color: #fff;
  padding: 10px 24px 10px 24px;
+ font-size: 14px;
  border: none;
-}
- .prebookBtn{ border-radius: 41px; -webkit-border-radius: 41px; -moz-border-radius: 41px; -ms-border-radius: 41px; -o-border-radius: 41px;margin-top: 16px;
+ border-radius: 41px; -webkit-border-radius: 41px; -moz-border-radius: 41px; -ms-border-radius: 41px; -o-border-radius: 41px;margin-top: 16px;
 }
 
 .influencer_image img {
@@ -186,10 +143,13 @@ line-height: 24px;
  branding section start
   --------------------------*/
 
-.brand{
+.brand-icons{
  display: flex;
  justify-content: center;
- margin: 50px 0px 50px 0px;
+}
+.brand-icons div img{
+ margin: 50px 20px 50px 20px;
+
 }
 .divider{
  background: linear-gradient(to right, red, yellow);
@@ -198,7 +158,7 @@ line-height: 24px;
 
 }
 /*-------------------------
- card collection start
+ popular collection start
  -------------------- */
   .PopularCollection{
 display: flex;
@@ -248,9 +208,29 @@ line-height:20.02px ;
 color: #787885
 
 }
+/*------------------------------
+         See more
+  --------------------------- */
+  .seemore{
+          width: 89%;
+          display: flex;
+justify-content: right;
+margin-top: 40px;
+}
+.seemore a{
+color: #E02C6D;
+
+}
+
+
+
 /*-------------------------
  influencer categories
 --------------------------- */
+.influencer-categories{
+display: flex;
+justify-content: center;
+}
 .categories{
  width: 200px;
 }
@@ -289,3 +269,79 @@ color:  #D9DBE1;
 .social-icon i{
  margin-left: 10px;
 }
+
+
+
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+
+        .container{
+                display: block;
+               }
+               .influencer__title{
+text-align: center;
+font-size: 28px;
+line-height: 42px;
+               }
+
+.influencer__info{
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+       
+       }
+       .prebookBtn{
+display: flex;
+justify-content: center;
+}
+.influencer_image img{
+        width: 257px;
+height: 257px;
+}
+.menu{
+        display: none;
+}
+.nav{
+        width: 54%;
+}
+.brand{
+        display: flex;
+        justify-content: center;
+}
+.brand-icons{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+
+}
+.brand-icons div img{
+        margin: 30px 0px 30px 0px;
+       
+       }
+       .cardContainer{ 
+        display: grid;
+          grid-template-columns: repeat(1,1fr);
+          grid-gap: 30px;
+       }
+       .seemore{
+               width: 79%;
+       }
+       .categories-container{
+               display: flex;
+               justify-content: center;
+       }
+       .influencer-categories{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+        }
+ }
+
+/* Medium devices (tablets, 577px and up to 768) */
+@media (min-width:577px) and (max-width: 768px) {
+
+  }
+
+ /* Large devices (desktops,769 and up to 1440px) */
+@media (min-width: 769px) and (max-width:1440px) { 
+
+ }
