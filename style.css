@@ -1,4 +1,291 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@500;600;700&display=swap');
 /* font-family: 'Inter', sans-serif;
 font-family: 'Poppins', sans-serif; */
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body{
+ font-family: 'Poppins', sans-serif; 
+}
+/* a{
+ text-decoration: none;
+}
+.logo{
+ width: 65%;
+}
+.logo p{
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #3A3A3A;
+text-align: center;
+}
+menu{
+ display: flex;
+ justify-content: center;
+}
+.navbar{
+ width: 100%;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+
+}
+.nav{
+ margin-top: 2px;
+}
+.nav nav ul{
+ display: flex;
+ list-style: none;
+}
+
+li a{
+ color: #000;
+ text-align: end;
+}
+li{
+ margin-left: 34px;
+} */
+/* nav bar */
+.navigation {
+ width: 100%;
+ height: 94px;
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.nav {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+width: 86%;
+}
+.logo {
+ display: flex;
+ align-items: center;
+}
+
+.logo h2 a{
+ text-decoration: none;
+ font-size: 24px;
+ color: #3A3A3A;
+}
+.menu ul {
+ display: flex;
+ align-items: center;
+}
+.menu ul li {
+ list-style-type: none;
+}
+.menu ul li a {
+ text-decoration: none;
+ color: #3A3A3A;
+  font-size: 16px;
+ margin-right: 36px;
+}
+.menu ul li:last-child a {
+ margin-right: 0;
+}
+
+.profile {
+ width: 51px;
+ height: 51px;
+}
+/* end nav bar */
+
+/*---------------------
+ Influencer Header
+ ---------------------- */
+ .categorie-container{
+  margin-top: 50px;
+ }
+ .influencer-categories{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 50px 0px;
+
+ }
+.container{
+ display: flex;
+ width: 100%;
+}
+.influencer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.influencer_Detail{
+ width: 80%;
+}
+
+.influencer__title{
+ font-size: 52px;
+ font-weight: 700;
+ line-height: 70px;
+ color: #3A3A3A;
+}
+.influencer__info{
+ font-weight: 600;
+font-size: 16px;
+color: #3A3A3A;
+line-height: 24px;
+
+}
+.btn{
+ background-color:  #E02C6D;
+ color: #fff;
+ padding: 10px 24px 10px 24px;
+ border: none;
+}
+ .prebookBtn{ border-radius: 41px; -webkit-border-radius: 41px; -moz-border-radius: 41px; -ms-border-radius: 41px; -o-border-radius: 41px;margin-top: 16px;
+}
+
+.influencer_image img {
+	-webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+.influencer_image img{ animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both; -webkit-animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both; }
+
+
+@-webkit-keyframes swing-in-top-fwd {
+ 0% {
+   -webkit-transform: rotateX(-100deg);
+           transform: rotateX(-100deg);
+   -webkit-transform-origin: top;
+           transform-origin: top;
+   opacity: 0;
+ }
+ 100% {
+   -webkit-transform: rotateX(0deg);
+           transform: rotateX(0deg);
+   -webkit-transform-origin: top;
+           transform-origin: top;
+   opacity: 1;
+ }
+}
+@keyframes swing-in-top-fwd {
+ 0% {
+   -webkit-transform: rotateX(-100deg);
+           transform: rotateX(-100deg);
+   -webkit-transform-origin: top;
+           transform-origin: top;
+   opacity: 0;
+ }
+ 100% {
+   -webkit-transform: rotateX(0deg);
+           transform: rotateX(0deg);
+   -webkit-transform-origin: top;
+           transform-origin: top;
+   opacity: 1;
+ }
+}
+
+/*--------------------------
+ branding section start
+  --------------------------*/
+
+.brand{
+ display: flex;
+ justify-content: center;
+ margin: 50px 0px 50px 0px;
+}
+.divider{
+ background: linear-gradient(to right, red, yellow);
+ height: 1px;
+ border: 0px;
+
+}
+/*-------------------------
+ card collection start
+ -------------------- */
+  .PopularCollection{
+display: flex;
+justify-content: center;
+ }
+ .cardContainer{ 
+  display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+ }
+.card_collection{
+ width: 330px;
+ padding: 15px;
+ box-shadow: 0px 2px 4px 2px rgba(46,46,46,0.1);
+ -webkit-box-shadow: 0px 2px 4px 2px rgba(46,46,46,0.1);
+ -moz-box-shadow: 0px 2px 4px 2px rgba(46,46,46,0.1);
+ border-radius: 5px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ -ms-border-radius: 5px;
+ -o-border-radius: 5px;
+}
+.card_collection div img{
+ width: 300px;
+}
+.card__title{
+ font-weight: 500;
+ font-size: 25px;
+ line-height: 40px;
+ color: #18191F;}
+.card__details h4{
+ font-family: 'Inter', sans-serif;
+ font-weight: 400;
+font-size: 20px;
+line-height: 36px;
+color: rgba(0, 0, 0, 0.87);
+}
+.fa-star.filled,.fa-star-half-full{
+ color: #FB8200;
+ font-size: 13px;
+}
+.card__details p{
+ font-family: 'Inter', sans-serif;
+font-weight: 700;
+font-size: 13px;
+line-height:20.02px ;
+color: #787885
+
+}
+/*-------------------------
+ influencer categories
+--------------------------- */
+.categories{
+ width: 200px;
+}
+.categories img{
+width:70%;
+}
+
+
+/*-----------------------
+        footer start
+ ----------------------- */
+
+ .footer{
+  background-color:#0A0826;
+  text-align: center;
+padding:50px 0px 50px 0px;  
+ }
+ .copyright-details h3{
+  font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color:#fff;
+ }
+ .copyright-details p,small{
+  font-family: monospace;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 24px;
+color:  #D9DBE1;
+ }
+ .social-icon{
+  color: #787885;
+  font-size: 17px;
+ }
+.social-icon i{
+ margin-left: 10px;
+}
