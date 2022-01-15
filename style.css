@@ -106,7 +106,7 @@ margin-bottom: 30px;
 	-webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 	        animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
-.influencer_image img{ animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both; -webkit-animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both; }
+.influencer_image img{ animation:swing-in-top-fwd 2s cubic-bezier(.175,.885,.32,1.275) both; -webkit-animation:swing-in-top-fwd 2s cubic-bezier(.175,.885,.32,1.275) both; }
 
 /*----------------------
  animation on Main camera
